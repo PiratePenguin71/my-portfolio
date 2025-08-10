@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ff6f61; /* match main background */
+  font-family: sans-serif;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* Main content centered and padded */
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2rem;
+  background: #ff6f61;
+  color: #f4f4f4;
+
+  display: flex;               /* Use flexbox */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: center;     /* Center vertically */
+  align-items: center;         /* Center horizontally */
+  text-align: center;          /* Center text inside elements */
+
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+main section {
+  background: #0f75e1;            /* distinct background */
+  justify-content: center;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;               /* vertical spacing between sections */
+  box-shadow: 0 2px 8px rgb(0, 0, 0); /* subtle shadow */
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+/* Header full width */
+header {
+  background: #222;
+  color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  top: auto;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease; /* smooth color transition */
+}
+
+nav a:hover {
+  color: #ff6600; /* color when hovered */
+}
+
+/* Project grid styling */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* space between cards */
+  padding: 20px;
+  min-height: 100vh; /* makes it fill full page height */
+  box-sizing: border-box;
+}
+
+/* Project cards */
+.project-card {
+  background: #f5f5f5;
+  color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.play-now {
+  text-decoration: none; 
+  color: #fff !important;
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: #4800b3;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.play-now:hover {
+  background: #003f82;
+}
+/* Contact section */
+.contact-google {
+  display: flex;
+  align-items: flex-start; /* top align */
+  justify-content: center; /* center them horizontally on the page */
+  gap: 20px; /* space between the image and form */
+  flex-wrap: wrap; /* allow stacking on small screens */
+}
+
+.contact-google img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-google iframe {
+  max-width: 100%;
+}
+
+#image-row1,
+#image-row2,
+#image-row3  {
+  display: flex;
+  gap: 1rem;           /* space between images */
+  justify-content: center; /* center images horizontally */
+  flex-wrap: nowrap;     /* allow wrapping on smaller screens */
+  max-width: 900px;      /* prevent growing wider than section */
+  box-sizing: border-box;
+  overflow-x: visible;
+  margin: 0 auto;
+}
+
+#image-row1 img,
+#image-row2 img,
+#image-row3 img {
+  min-width: 100px;
+  width: auto;
+  height: 200px;
+  border-radius: 5px;
+  flex-shrink: 1;  /* flexible width, minimum ~300px */
+  object-fit: contain;
+  flex-grow: 0;
+}
+@media (max-width: 600px) {
+  .image-row img {
+    height: 200px;    /* smaller height on narrow screens */
+  }
+}
+
+.contact-list {
+  list-style-type: none;  /* Remove bullets */
+  padding: 0;
+  margin: 0 auto;
+  font-family: sans-serif;
+  max-width: 400px;
+  text-align: center;
+}
+
+.contact-list li {
+  margin-bottom: 0.8rem;
+}
+
+/* Footer full width */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  box-sizing: border-box;
+}
