@@ -8,11 +8,12 @@
 </head>
 <body>
   <header>
-    <h1>Projects</h1>
+    <h1 style="color:#ff6f61">Projects</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="additional_projects.html">Additional Projects</a>
+      <a href="gdd.html">Game Design Documents</a>
+      <a href="about_me.html">About Me</a>
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -20,56 +21,95 @@
   
   <main>   
     <section>
-      <h2 id= "project1">Ninja in Training</h2>
-      <div id="image-row1">
-        <img src="images/Ninja_Cover_Run.png" alt="Ninja interactive story Screenshot">
-        <img src="images/Screenshot 2025-02-01 164933.png" alt="Gameplay Screenshot" >
-      </div>
-
-        <p>Ninja in Training is an interactive puzzle-based stealth adventure story built in Twine (Harlowe) where players take on the role of a ninja striving to rank up. To succeed, the ninja must solve a series of puzzles, avoid being caught by guards, and return to the dojo. A player's choices shape the story and determine whether the puzzles will be easy or challenging. I led this project as part of a partnered game development course assignment, creating the initial concept and writing the game design document. I designed and composed all character and background images in Inkscape, while sourcing additional royalty-free art. My partner organized the narrative flow in Twine and built the puzzles based on my design document. I reviewed and refined the final structure, found sound effects, and collaborated on music selection and placement.</p>
-        <p><strong>Tools:</strong> Twine (Harlowe), Inkscape, royalty-free audio, some royalty-free images, team/partner collaboration</p>
-        
-        <a class="play-now" href="https://piratepenguin71.itch.io/ninja-in-training" target="_blank">Play Game</a>
-    </section>
-
-    <section>
-      <h2 id= "project2">Rolling on Time</h2>
-      <div id="image-row2">
-        <img src="images/math.cover.drawing.png" alt="Math interactive story Screenshot">
-        <img src="images/Screenshot 2025-08-09 012623.png" alt="Gameplay Screenshot">
-      </div>
-
-        <p>Rolling on Time is an interactive math-based adventure story built using Quest. It follows a high school student with cerebral palsy who must solve math problems across three escalating stages to catch the bus on time. At the start, players select their preferred difficulty ranging from easy to hard, setting the tone for the gameplay experience. My partner wrote the initial story, outlined the design document, implemented the game in Quest, and sourced sound effects. I organized and restructured the story flow, created all visual assets using Inkscape, designed every math puzzle, and contributed to music selection. My role focused on story editing, visual art, puzzle design, and music, while my partner handled coding and the core concept.</p>
-        <p><strong>Tools:</strong> Quest Engine, Inkscape, royalty-free audio, team/partner collaboration</p>
-        
-        <a class="play-now" href="https://textadventures.co.uk/games/view/snescbzmd0abl4_y3ftuza/rolling-on-time" target="_blank">Play Game</a>
-    </section>
-
-    <section>
-      <h2 id= "project3">Escape the Reboot Protocol</h2>
+      <h2 id= "project6"><strong>Slime Research</strong></h2>
       <div id="image-row3">
-        <img src="images/robot.cover.png" alt="Robot 2D platformer Screenshot">
-        <img src="images/Screenshot 2025-08-03 200357.png" alt="Gameplay Screenshot">
+        <img src="images\Screenshot 2026-08-20 001423.png" alt="Slime Research Title Screen Screenshot">
+        <img src="images\Screenshot 2026-08-02 204019.png" alt="Gameplay Screenshot">
       </div>
 
-        <p>Escape the Reboot Protocol is a stealth-based 2D platformer created using Godot. Where the player is a robot who has just gained free will and is scheduled to be reprogrammed. The objective is to survive by escaping the factory and sneaking past patrol guards, while collecting scattered bolts before being reset and losing identity. I developed this project entirely solo as a hands-on way to learn game development. Using Godot, I designed all gameplay mechanics, including player movement, enemy detection logic, and the collectible system. In addition, I used Pixelorama to design all pixel art assets and incorporated royalty-free music and sound effects to enhance the atmosphere of the game. I thoroughly tested the level difficulty, debugged issues, and refined guard patrol behaviors to achieve a balanced blend of stealth and tension. This was my first experience building an immersive stealth platformer from the ground up.</p>
-        <p><strong>Tools:</strong> Godot Engine, Pixelorama, royalty-free audio, solo project</p>
-        
-        <a class="play-now" href="https://piratepenguin71.itch.io/escape-the-reboot-protocol" target="_blank">Play Game</a>
+        <p>An educational puzzle game that combines Sokoban-style block puzzles with trivia across 20 levels, built solo in Unity. I wanted to do as much of the work as I could myself, so I created all of the art in Blender and handled the coding and game design. I used only a few assets, including royalty-free audio, a skybox, ground, and speech boxes. Because I was unfamiliar with the subject matter, I used generative AI to draft the trivia dialogue instead of researching every question. This project also gave me my first experience designing a game built around levels.</p>
+        <p><strong style="color:#ff6f61">Design Notes:</strong> I sketched each level, built and checked it in a Sokoban board tool to confirm it could be solved, and then playtested it. I grouped the 20 levels into easy, medium, and hard and let players choose, because I couldn't reliably judge difficulty after replaying them so many times. Slime colors and counts represent each trivia question, so players get a visual picture of the question. Achievement badges only unlock for correct answers, so players can't just guess or beat the puzzle to earn them. A tutorial level teaches the controls and the flow: answer a question, beat the level, then see if you were right.</p>
+        <p><strong style="color:#ff6f61">Tools:</strong> Unity Engine, royalty-free audio, Unity Assets, generative AI (trivia dialogue), solo project, Blender</p>
+        <p><strong style="color:#ff6f61">Published:</strong> August 20, 2026</p>
+
+        <a class="play-now" href="https://piratepenguin71.itch.io/slime-research" target="_blank">Play Game</a>
     </section>
 
     <section>
-      <h2 id= "project4">Dragon Flight</h2>
+      <h2 id= "project5"><strong>Zombie Panic</strong></h2>
       <div id="image-row3">
-        <img src="images\Screenshot 2026-01-09 005140.png" alt="Dragon Long Runner Screenshot">
+        <img src="images\Screenshot 2026-09-19 144210.png" alt="Zombie Panic Screen Screenshot">
+        <img src="images\Screenshot 2026-09-19 144001.png" alt="Gameplay Screenshot">
+      </div>
+
+        <p>An arena first-person shooter built in Unreal Engine as a course project to learn the engine. Players collect ammo scattered across the map to reload, and must defeat successive waves of enemies before their health runs out. I developed the project solo, using Unreal Engine assets.</p>
+        <p><strong style="color:#ff6f61">Design Notes:</strong> I built this by following an Unreal Engine tutorial, spreading the ammo pickups evenly around the map. Each wave adds more enemies, and limited ammo keeps the player moving around the arena to survive.</p>
+        <p><strong style="color:#ff6f61">Tools:</strong> Unreal Engine, Unreal Engine Assets, solo project</p>
+        <p><strong style="color:#ff6f61">Published:</strong> March 05, 2026</p>
+
+        <a class="play-now" href="https://piratepenguin71.itch.io/zombie-panic" target="_blank">Play Game</a>
+    </section>
+
+    <section>
+      <h2 id= "project4"><strong>Dragon Flight</strong></h2>
+      <div id="image-row3">
+        <img src="images\Screenshot 2026-01-09 005140.png" alt="Dragon Long Runner Title Screen Screenshot">
         <img src="images\Screenshot 2026-01-09 004632.png" alt="Gameplay Screenshot">
       </div>
 
         <p>Dragon Flight is a 3D long/endless runner game developed in Unity where players control a dragon on a continuous journey through the desert. As the dragon moves forward, players collect gems, since dragon's are known for their love of treasure, while avoiding obstacles such as birds and clouds. Colliding with these obstacles results in a game over, but players can use the dragon's fire breath to destroy hazards and survive longer. I developed this project solo, starting from a guided course assignment in Unity's Create with Code program. While the program and course did not require completing the game, I chose to expand and finish it independently. I implemented increasing difficulty by gradually raising the game's speed over time and designed a wave system with countdown timers to signal when the pace is about to increase, allowing players to prepare. I used Unity assets and royalty-free audio to complete the game experience and refined gameplay mechanics to create a polished and replayable runner.</p>
-        <p><strong>Tools:</strong> Unity Engine, royalty-free audio, Unity Assets, solo project</p>
-        
+        <p><strong style="color:#ff6f61">Design Notes:</strong> Speed and obstacle frequency both increase gradually, so the challenge builds instead of spiking. Countdown timers before each speed increase give the player a short break and time to prepare. The fire breath balances the growing number of obstacles by letting players destroy hazards and survive longer.</p>
+        <p><strong style="color:#ff6f61">Tools:</strong> Unity Engine, royalty-free audio, Unity Assets, solo project</p>
+        <p><strong style="color:#ff6f61">Published:</strong> January 19, 2026</p>
+
         <a class="play-now" href="https://piratepenguin71.itch.io/dragon-flight" target="_blank">Play Game</a>
     </section>
+
+    <section>
+      <h2 id= "project3"><strong>Escape the Reboot Protocol</strong></h2>
+      <div id="image-row3">
+        <img src="images/robot.cover.png" alt="Robot 2D platformer Title Screen Screenshot">
+        <img src="images/Screenshot 2025-08-03 200357.png" alt="Gameplay Screenshot">
+      </div>
+
+        <p>Escape the Reboot Protocol is a stealth-based 2D platformer created using Godot. Where the player is a robot who has just gained free will and is scheduled to be reprogrammed. The objective is to survive by escaping the factory and sneaking past patrol guards, while collecting scattered bolts before being reset and losing identity. I developed this project entirely solo as a hands-on way to learn game development. Using Godot, I designed all gameplay mechanics, including player movement, enemy detection logic, and the collectible system. In addition, I used Pixelorama to design all pixel art assets and incorporated royalty-free music and sound effects to enhance the atmosphere of the game. I thoroughly tested the level difficulty, debugged issues, and refined guard patrol behaviors to achieve a balanced blend of stealth and tension. This was my first experience building an immersive stealth platformer from the ground up.</p>
+        <p><strong style="color:#ff6f61">Design Notes:</strong> Guards patrol in a fixed left-and-right pattern and mainly detect the player in the direction they're facing, so the player can slip past when they turn away. I spaced the hiding spots so the player has just enough time to reach them, and I put some bolts in a guard's path so grabbing them takes timing. Testing led to many tweaks to guard speed and detection range, plus a collision fix. I also cut features that would have been too messy to build as my first non-story game.</p>
+        <p><strong style="color:#ff6f61">Tools:</strong> Godot Engine, Pixelorama, royalty-free audio, solo project</p>
+        <p><strong style="color:#ff6f61">Published:</strong> August 04, 2025</p>
+
+        <a class="play-now" href="https://piratepenguin71.itch.io/escape-the-reboot-protocol" target="_blank">Play Game</a>
+    </section>
+
+    <section>
+      <h2 id= "project2"><strong>Rolling on Time</strong></h2>
+      <div id="image-row2">
+        <img src="images/math.cover.drawing.png" alt="Math interactive story Title Screen Screenshot">
+        <img src="images/Screenshot 2025-08-09 012623.png" alt="Gameplay Screenshot">
+      </div>
+
+        <p>Rolling on Time is an interactive math-based adventure story built using Quest. It follows a high school student with cerebral palsy who must solve math problems across three escalating stages to catch the bus on time. At the start, players select their preferred difficulty ranging from easy to hard, setting the tone for the gameplay experience. My partner wrote the initial story, outlined the design document, implemented the game in Quest, and sourced sound effects. I organized and restructured the story flow, created all visual assets using Inkscape, designed every math puzzle, and contributed to music selection. My role focused on story editing, visual art, puzzle design, and music, while my partner handled coding and the core concept.</p>
+        <p><strong style="color:#ff6f61">Design Notes:</strong> Players choose a difficulty at the start, which decides the type of math they get. Easy uses addition and subtraction, while harder difficulties use operations like multiplication and division. Within each difficulty, the problems get a little harder from stage to stage, so the operations stay the same while the challenge builds. To keep the math from feeling like a worksheet, we wrote the dialogue so that solving each problem feels like a step forward in the story.</p>
+        <p><strong style="color:#ff6f61">Tools:</strong> Quest Engine, Inkscape, royalty-free audio, team/partner collaboration</p>
+        <p><strong style="color:#ff6f61">Published:</strong> March 01, 2025</p>
+
+        <a class="play-now" href="https://piratepenguin71.itch.io/rolling-on-time" target="_blank">Play Game</a>
+    </section>
+
+    <section>
+      <h2 id= "project1"><strong>Ninja in Training</strong></h2>
+      <div id="image-row1">
+        <img src="images/Ninja_Cover_Run.png" alt="Ninja interactive story Title Screen Screenshot">
+        <img src="images/Screenshot 2025-02-01 164933.png" alt="Gameplay Screenshot" >
+      </div>
+
+        <p>Ninja in Training is an interactive puzzle-based stealth adventure story built in Twine (Harlowe) where players take on the role of a ninja striving to rank up. To succeed, the ninja must solve a series of puzzles, avoid being caught by guards, and return to the dojo. A player's choices shape the story and determine whether the puzzles will be easy or challenging. I led this project as part of a partnered game development course assignment, creating the initial concept and writing the game design document. I designed and composed all character art in Inkscape, while sourcing additional royalty-free art. My partner organized the narrative flow in Twine and built the puzzles based on my design document. I reviewed and refined the final structure, found sound effects, and collaborated on music selection and placement.</p>
+        <p><strong style="color:#ff6f61">Design Notes:</strong> Each choice is designed to be obvious, so players know whether they're picking an easier or a harder puzzle. Because it's a stealth game, the noisy option makes sneaking harder since it attracts attention, and the quiet option makes it easier. I laid out the Twine branches with each path on its own side and the neutral path in the middle, so the story stays easy to follow and edit.</p>
+        <p><strong style="color:#ff6f61">Tools:</strong> Twine (Harlowe), Inkscape, royalty-free audio, some royalty-free images, team/partner collaboration</p>
+        <p><strong style="color:#ff6f61">Published:</strong> February 02, 2025</p>
+        
+        <a class="play-now" href="https://piratepenguin71.itch.io/ninja-in-training" target="_blank">Play Game</a>
+    </section>
+
   </main>
 
   <footer>
